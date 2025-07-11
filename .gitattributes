@@ -1,0 +1,52 @@
+# Set default text file handling
+* text=auto
+
+# Python files
+*.py text eol=lf linguist-language=Python
+
+# Jupyter Notebooks
+*.ipynb text eol=lf linguist-language=Jupyter-Notebook
+
+# JSON files
+*.json text eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# Text files
+*.txt text eol=lf
+
+# Requirements files
+requirements*.txt text eol=lf
+
+# Configuration files
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+
+# Documentation
+*.rst text eol=lf
+
+# Shell scripts (if any)
+*.sh text eol=lf
+
+# Batch files (Windows)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+*.exe binary
+*.dll binary
+*.so binary
+
+# Force LF line endings for Python files to avoid Windows/Unix issues
+*.py eol=lf
+*.pyi eol=lf

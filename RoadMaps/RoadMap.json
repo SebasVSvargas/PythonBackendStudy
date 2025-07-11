@@ -1,0 +1,247 @@
+{
+  "roadmap_title": "Roadmap de Aprendizaje Backend Moderno (Enfoque FastAPI)",
+  "description": "Un roadmap estructurado para el aprendizaje de desarrollo backend con un enfoque en tecnologías modernas como Python, FastAPI, Poetry, SQLModel y Docker, diseñado para ser fácilmente procesado por LLMs.",
+  "phases": [
+    {
+      "phase_number": 1,
+      "title": "Fundamentos de Python 🐍",
+      "description": "Esta base sigue siendo esencial y no cambia.",
+      "topics": [
+        {
+          "topic_title": "Sintaxis y Tipos de Datos",
+          "key_concepts": [
+            "Control de Flujo (if, bucles), Operadores."
+          ]
+        },
+        {
+          "topic_title": "Estructuras de Datos a fondo",
+          "key_concepts": [
+            "Listas, Diccionarios, Tuplas, Sets.",
+            "Comprensiones (List/Dict Comprehensions)."
+          ]
+        },
+        {
+          "topic_title": "Programación Orientada a Objetos (POO)",
+          "key_concepts": [
+            "Pilares: Encapsulamiento, Herencia, Polimorfismo.",
+            "Clases, objetos, atributos y métodos (instancia, clase, estáticos).",
+            "Métodos Mágicos (__init__, __str__, __repr__)."
+          ]
+        },
+        {
+          "topic_title": "Manejo de Errores y Excepciones",
+          "key_concepts": [
+            "Bloques try, except, else, finally.",
+            "Creación de excepciones personalizadas."
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 2,
+      "title": "Entornos Virtuales y Gestión de Proyectos con Poetry บริหาร",
+      "description": null,
+      "topics": [
+        {
+          "topic_title": "Poetry: Gestión Moderna de Dependencias",
+          "key_concepts": [
+            "Concepto: Entender por qué Poetry es superior para la gestión de dependencias y la creación de paquetes.",
+            "Comandos Esenciales: poetry new, poetry install, poetry add, poetry run."
+          ]
+        },
+        {
+          "topic_title": "Archivos Clave",
+          "key_concepts": [
+            "Estructura y uso del archivo pyproject.toml y poetry.lock."
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 3,
+      "title": "APIs de Alto Rendimiento con FastAPI y Pydantic ⚡",
+      "description": "Este es ahora el núcleo de tu aprendizaje en frameworks.",
+      "topics": [
+        {
+          "topic_title": "Importancia de FastAPI",
+          "key_concepts": [
+            "Rendimiento: Entender su alta velocidad gracias a Starlette y ASGI.",
+            "Python Moderno: Aprovechamiento de las declaraciones de tipo (type hints) para robustez y autocompletado.",
+            "Desarrollo Rápido: Reducción drástica del código necesario y documentación automática."
+          ]
+        },
+        {
+          "topic_title": "Path Operations",
+          "key_concepts": [
+            "Decoradores (@app.get, @app.post, etc.).",
+            "Parámetros de ruta, consulta (query) y cuerpo de la petición (body)."
+          ]
+        },
+        {
+          "topic_title": "Pydantic para Validación de Datos",
+          "key_concepts": [
+            "Definición de modelos de datos para validación estricta y automática.",
+            "Control de tipos, campos opcionales y valores por defecto."
+          ]
+        },
+        {
+          "topic_title": "Dependency Injection",
+          "key_concepts": [
+            "Sistema de dependencias (Depends) para reutilizar lógica, gestionar conexiones a BD y autenticación."
+          ]
+        },
+        {
+          "topic_title": "Documentación Automática (Swagger/ReDoc)",
+          "key_concepts": [
+            "Generación e interpretación de la documentación interactiva de la API."
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 4,
+      "title": "Bases de Datos con SQLModel y PostgreSQL 🗄️",
+      "description": null,
+      "topics": [
+        {
+          "topic_title": "SQLModel: El ORM para FastAPI",
+          "key_concepts": [
+            "Concepto: Entender cómo SQLModel combina Pydantic y SQLAlchemy para crear una única fuente de verdad para tus modelos.",
+            "Definición de Modelos: Crear tablas de base de datos usando sintaxis de Python con tipos.",
+            "Engine y Sesiones: Crear el motor de conexión y gestionar las sesiones para las transacciones.",
+            "Operaciones CRUD: Implementar la creación, lectura, actualización y eliminación de registros de forma asíncrona."
+          ]
+        },
+        {
+          "topic_title": "PostgreSQL (Relacional)",
+          "key_concepts": [
+            "SQL: Fundamentos de SELECT, INSERT, UPDATE, DELETE, JOIN.",
+            "Transacciones ACID: Reafirmar su importancia en sistemas críticos.",
+            "Migraciones: Uso de herramientas como Alembic para gestionar los cambios en el esquema de la base de datos."
+          ]
+        },
+        {
+          "topic_title": "Redis (NoSQL - Caché)",
+          "key_concepts": [
+            "Implementar un sistema de caché para las consultas más frecuentes y mejorar el rendimiento."
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 5,
+      "title": "Seguridad en APIs 🔐",
+      "description": "Aplicado directamente a los endpoints de FastAPI.",
+      "topics": [
+        {
+          "topic_title": "Autenticación y Autorización con JWT",
+          "key_concepts": [
+            "Flujo de autenticación con OAuth2PasswordBearer en FastAPI.",
+            "Creación y validación de tokens JWT.",
+            "Protección de endpoints con dependencias de seguridad."
+          ]
+        },
+        {
+          "topic_title": "OWASP Top 10 para APIs",
+          "key_concepts": [
+            "Mitigación de vulnerabilidades comunes en el contexto de FastAPI."
+          ]
+        },
+        {
+          "topic_title": "Gestión de Secretos",
+          "key_concepts": [
+            "Uso de variables de entorno con Pydantic BaseSettings."
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 6,
+      "title": "Automatización y Despliegue con GitHub ☁️",
+      "description": null,
+      "topics": [
+        {
+          "topic_title": "Git y GitHub",
+          "key_concepts": [
+            "Flujo de trabajo con ramas (GitFlow)."
+          ]
+        },
+        {
+          "topic_title": "Docker",
+          "key_concepts": [
+            "Dockerfile para una aplicación FastAPI.",
+            "docker-compose para el entorno de desarrollo local (app, db, redis)."
+          ]
+        },
+        {
+          "topic_title": "CI/CD con GitHub Actions",
+          "key_concepts": [
+            "Automatización de pruebas (pytest), linting y construcción de imágenes Docker."
+          ]
+        },
+        {
+          "topic_title": "GitHub Hooks (Webhooks)",
+          "key_concepts": [
+            "Funcionamiento: Entender que un webhook es una notificación HTTP que se envía a un servicio externo cuando ocurre un evento en GitHub.",
+            "Diferencia con Actions: El hook es el 'disparo', Actions es la 'pistola' que reacciona a ese evento para ejecutar flujos de trabajo."
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 7,
+      "title": "Ampliando el Stack: Django 🏗️",
+      "description": "Estudiar al final, para entender un enfoque alternativo.",
+      "topics": [
+        {
+          "topic_title": "Concepto General",
+          "key_concepts": [
+            "Framework 'con baterías incluidas', ideal para aplicaciones monolíticas grandes.",
+            "Su principal ventaja hoy en día es su robusto panel de administración."
+          ]
+        },
+        {
+          "topic_title": "Componentes Clave (a nivel conceptual)",
+          "key_concepts": [
+            "Arquitectura MVT (Modelo-Vista-Template).",
+            "El ORM de Django (diferencias con SQLModel/SQLAlchemy).",
+            "Django REST Framework (DRF) como su contraparte para crear APIs."
+          ]
+        }
+      ]
+    },
+    {
+      "phase_number": 8,
+      "title": "Introducción al Frontend: React ⚛️",
+      "description": "Para poder construir una aplicación completa.",
+      "topics": [
+        {
+          "topic_title": "Fundamentos de React",
+          "key_concepts": [
+            "JSX, Componentes Funcionales, Props vs. State."
+          ]
+        },
+        {
+          "topic_title": "Hooks Esenciales",
+          "key_concepts": [
+            "useState para manejar el estado local del componente.",
+            "useEffect para manejar efectos secundarios (como llamadas a la API)."
+          ]
+        },
+        {
+          "topic_title": "Comunicación con el Backend",
+          "key_concepts": [
+            "Uso de fetch o axios para consumir los endpoints de tu API de FastAPI.",
+            "Renderizado de los datos obtenidos del backend."
+          ]
+        },
+        {
+          "topic_title": "Gestión de Estado (Básico)",
+          "key_concepts": [
+            "Uso del Hook useContext para compartir estado globalmente."
+          ]
+        }
+      ]
+    }
+  ]
+}
