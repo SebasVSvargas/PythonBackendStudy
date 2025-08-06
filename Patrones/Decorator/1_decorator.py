@@ -4,10 +4,15 @@ class Taco(ABC):
     @abstractmethod
     def price(self):
         pass
+    @abstractmethod
+    def description(self):
+        pass
 
 class BasicTaco(Taco):
     def price(self):
         return 5
+    def description(self):
+        return "Taco simple "
 
 class TacoDecorator(Taco):
     def __init__(self, taco:Taco):
@@ -15,17 +20,25 @@ class TacoDecorator(Taco):
 
     def price(self):
         return self._taco.price()
+    def description(self):
+        return self._taco.description() + "Extra "
     
 class DoubleMeatTaco(TacoDecorator):
     def price(self):
         return self._taco.price() + 4
+    def description(self):
+        return super().description() + "Doble Carne "
     
 class CheeseTaco(TacoDecorator):
     def price(self):
         return super().price() + 2
+    def description(self):
+        return super().description() + "Quesillo "
     
 taco = BasicTaco()
-print(f"Taco sencillo: {taco.price()}")
+print(f"Taco sencillo: ${taco.price()}")
+print(f"Descripción: {taco.description()}")
+print("--------------------------------------------")
 
 double_meat_taco = DoubleMeatTaco(
                         CheeseTaco(
@@ -33,13 +46,19 @@ double_meat_taco = DoubleMeatTaco(
                         )
                     )
 
-print(f"taco doble carne: {double_meat_taco.price()}")
+print(f"taco doble carne: ${double_meat_taco.price()}")
+print(f"Descripción: {double_meat_taco.description()}")
+print("--------------------------------------------")
 
 cheese_taco = CheeseTaco(BasicTaco())
-print(f"Taco con queso: {cheese_taco.price()}")
+print(f"Taco con queso: ${cheese_taco.price()}")
+print(f"Descripción: {cheese_taco.description()}")
+print("--------------------------------------------")
 
 triple_meat_taco = DoubleMeatTaco(double_meat_taco)
-print(f"Taco triple carne: {triple_meat_taco.price()}")
+print(f"Taco triple carne: ${triple_meat_taco.price()}")
+print(f"Descripción: {triple_meat_taco.description()}")
+print("--------------------------------------------")
 
 # ------------------------------------- 
 
