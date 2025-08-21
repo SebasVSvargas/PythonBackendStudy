@@ -40,7 +40,7 @@ print(f"Taco sencillo: ${taco.price()}")
 print(f"Descripción: {taco.description()}")
 print("--------------------------------------------")
 
-double_meat_taco = DoubleMeatTaco(
+double_meat_taco =  DoubleMeatTaco(
                         CheeseTaco(
                             BasicTaco()
                         )
@@ -60,6 +60,10 @@ print(f"Taco triple carne: ${triple_meat_taco.price()}")
 print(f"Descripción: {triple_meat_taco.description()}")
 print("--------------------------------------------")
 
+tetra_meat_taco = DoubleMeatTaco(triple_meat_taco)
+print(f"Taco cuadruple carne: ${tetra_meat_taco.price()}")
+print(f"Descripción: {tetra_meat_taco.description()}")
+print("--------------------------------------------")
 # ------------------------------------- 
 
 # Componente base
