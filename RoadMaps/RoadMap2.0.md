@@ -1,8 +1,7 @@
-# Roadmap Definitivo para Backend Developer Python (Edición 2025)
+# Roadmap Definitivo para Backend Developer Python
 
 ## Fase 1: Fundamentos de Python
 
-*Esta es la base sobre la que construirás toda tu carrera. Un dominio profundo aquí te diferenciará enormemente. No tengas prisa.*
 
 ### Sintaxis y Tipos de Datos
 
