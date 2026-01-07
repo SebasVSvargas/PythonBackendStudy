@@ -7,8 +7,8 @@ You can return the answer in any order. """
 
 from typing import List
 
-nums = [3,2,4]
-target = 6
+nums = [3,2,4,7,11,15]
+target = 18
 
 # Solution 1: Brute Force Approach   Complexity O(n^2) because of nested loops
 def two_index_of_sum(nums: list[int], target: int) -> list[int] :
