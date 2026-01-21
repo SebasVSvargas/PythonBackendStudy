@@ -5,7 +5,7 @@ print(b)
 del a[0]
 print(id(a))
 print(id(b))
-c = a[:]
+c = a[:] # crea una copia de la lista
 print(id(a))
 print(id(b))
 print(id(c))
